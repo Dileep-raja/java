@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.gtm.entities">
+	<class name="Journey" table="JOURNEY">
+		<id name="journeyNo" column="JOURNEY_NO">
+			<generator class="identity"/>
+		</id>
+		<property name="source" column="SOURCE"/>
+		<property name="destination" column="DESTINATION"/>
+		<property name="journeyDate" column="JOURNEY_DT"/>
+		<property name="amount" column="AMOUNT"/>
+	</class>
+</hibernate-mapping>
